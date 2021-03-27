@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Player</title>
+</head>
+<style>
+    .fakeimage{
+        width:500px;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 1rem;
+    }
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+body {
+  background: #e2e1e0;
+  text-align: center;
+  padding: 90px 0 0 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  min-height: 150px;
+  margin: 1rem auto;
+  position: relative;
+  width: 900px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card h2, .card h1 {
+  display: block;
+  color: #6580B2;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.card span.filename {
+  display: block;
+  text-align: left;
+  color: #A3A3A3;
+  margin: 10px 0;
+}
+
+.card h2.changelog_title {
+  margin: 50px 0 0 0;
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  color: #555;
+  border-bottom: 1px solid #CCC;
+}
+
+.card .changelog {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  text-align: left;
+  color: #555;
+}
+
+.card .changelog ul {
+  padding: 10px 0 0 18px;
+  margin: 0;
+}
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: #34495E;
+  box-sizing: border-box;
+  padding: 0 25px;
+  z-index: 99;
+}
+
+.header h1 {
+  display: inline-block;
+  height: 75px;
+  line-height: 75px;
+  color: #FFF;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  float:none;
+}
+
+.header a {
+  display: inline-block;
+  height: 75px;
+  line-height: 75px;
+  text-decoration: none;
+  color: #FAFAFA;
+  font-size: 28px;
+  float:none;
+  padding: 0 30px;
+  transition: all 0.22s ease;
+}
+
+.header a:hover {
+  color: #CCC;
+}
+.card a.btn {
+  height: 45px;
+  padding: 0 25px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 100px;
+  background-color: #2196f3;
+  border: none;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.1);
+  margin: 25px 0 15px 0;
+  display: inline-block;
+  line-height: 45px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.card a.btn1{
+  height: 50px;
+  color: #ffffff;
+  text-align:centre;
+  overflow:hidden;
+  cursor:pointer;
+  background-color: #4169E1;
+  border: none;
+  margin: 25px 0 15px 0;
+  display: inline-block;
+  line-height: 45px;
+  border-radius:50px;
+  border: none;
+  padding: 2px;
+  margin:3px
+}
+
+
+</style>
+<div class="header">
+        <h1>Downloader for ShowFlicks</h1>
+        <a href="https://www.showflicks.in"><i class="ion-chevron-left"></i></a>
+    </div>
+    <div class="card card-2">
+        <h2>ZloGuardian v0.5.3</h2>
+        <span class="filename">zloguardian_0.5.3.zip</span>
+        <div class="#" >
+        <a href="flud" class="btn1">
+        Very Fast Download (Download This.)
+        </a>
+    </div>
+        <a href="#" class="btn" onclick="countDown">
+        Download(480P)
+        </a>
+        <br>
+        <a href="#" class="btn"onclick="countDown">
+        Download(720P)
+        </a>
+        <br>
+        <a href="#" class="btn" onclick="countDown">
+        Download(1080P)
+        </a>
+    </div>
+    <style scoped='' type='text/css'>
+        .fixed-leftSd,.fixed-rightSd{position:fixed;top:60px;width:160px;height:600px;z-index:9999;transform:translateZ(0)}
+        .fixed-leftSd{left:0}
+        .fixed-rightSd{right:0}
+        .close-fixedSd{position:absolute;width:160px;height:15px;line-height:15px;font-size:11px;font-weight:400;top:-15px;left:0;text-align:center;background:#e0e0e0;color:#666;padding:5px 0;cursor:pointer}
+        @media screen and (max-width:800px){.fixed-leftSd,.fixed-rightSd{display:none;visibility:hidden;}}
+        </style>
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+        <div class="fixed-leftSd">
+        <div aria-label="Close Ads" class="close-fixedSd" role="button" tabindex="0" onclick="this.parentElement.style.display=&quot;none&quot;">
+        CLOSE ADS
+        <script>
+            window.googletag = window.googletag || {cmd: []};
+            googletag.cmd.push(function() {
+              googletag
+                  .defineSlot(
+                      '/6355419/Travel/Europe/France/Paris', [300, 250], 'banner-ad')
+                  .addService(googletag.pubads());
+              googletag.enableServices();
+            });
+          </script>
+        </div>
+        <!-- Paste Your Ads Code Here-->
+        
+        
+        </div>
+        <div class="fixed-rightSd">
+        <div aria-label="Close Ads" class="close-fixedSd" role="button" tabindex="0" onclick="this.parentElement.style.display=&quot;none&quot;">
+        CLOSE ADS
+        <script>
+            window.googletag = window.googletag || {cmd: []};
+            googletag.cmd.push(function() {
+              googletag
+                  .defineSlot(
+                      '/6355419/Travel/Europe/France/Paris', [300, 250], 'banner-ad')
+                  .addService(googletag.pubads());
+              googletag.enableServices();
+            });
+          </script>
+        </div>
+        <!-- Paste Your Ads Code Here-->
+        
+        
+        </div>
+        <script>
+            googletag.cmd.push(function() {
+              googletag.display('banner-ad');
+            });
+          </script> 
+
+<body>
+    <div class="card card-2">
+        <a href="https://www.bing.com/search?q=example+add+link&cvid=fd49ef0994e847d9bcb7ffbf8f4747ab&aqs=edge..69i57j0.25032j0j1&pglt=161&FORM=ANNTA1&PC=U531">
+            <video controls width="500" poster="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E033B888C35EDCBDE224E89361F93994AC71CD395A53CE74E3FE88A776EA6DB9">
+
+                <source src="/media/cc0-videos/flower.webm"
+                        type="video/webm">
+            
+                <source src="/media/cc0-videos/flower.mp4"
+                        type="video/mp4">
+            
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </a>
+        <!-- <<a target="_blank" href="https://www.bing.com/search?q=example+add+link&cvid=fd49ef0994e847d9bcb7ffbf8f4747ab&aqs=edge..69i57j0.25032j0j1&pglt=161&FORM=ANNTA1&PC=U531">
+            <img class="fakeimage" src="icons/OIP.jpg">
+        </a>> -->
+    </div>
+</body>
+</html>
